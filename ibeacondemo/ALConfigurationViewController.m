@@ -407,7 +407,9 @@
 //                NSMutableDictionary *dic = nil;
                 [peripheralData setObject:@[[CBUUID UUIDWithString:@"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"]] forKey:CBAdvertisementDataServiceUUIDsKey];
                 [peripheralData setObject:@"SiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiri" forKey:CBAdvertisementDataLocalNameKey];
-                _peripheralManager adds
+                
+                CBMutableService *service = [[CBMutableService alloc] initWithType:[CBUUID UUIDWithString:@"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"] primary:YES];
+                [_peripheralManager addService:service];
                 [_peripheralManager startAdvertising:peripheralData];
             }
             
