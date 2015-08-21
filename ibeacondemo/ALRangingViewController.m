@@ -109,6 +109,8 @@
     CBPeripheralManager *_peripheralManager;
     
     CBPeripheral *_peripheral;
+    
+    BOOL _isConnected;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -184,6 +186,10 @@
 - (void)scan {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        NSDictionary *scanOptions = @{CBCentralManagerScanOptionAllowDuplicatesKey:@(YES)};
+        if (_isConnected) {
+            return;
+        }
+        
         NSArray *services = @[[CBUUID UUIDWithString:@"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"]];
         
 //        [_centralManager scanForPeripheralsWithServices:services options:@{CBCentralManagerScanOptionSolicitedServiceUUIDsKey : @[[CBUUID UUIDWithString:@"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0"]]}];
@@ -219,6 +225,8 @@
 
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
     NSLog(@"connected!");
+    _isConnected = YES;
+    
     _peripheral.delegate = self;
     
     //查找所有服务
@@ -228,7 +236,6 @@
 //发现了服务
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error {
     for (CBService *service in peripheral.services) {
-//        NSLog(@"service: %@",service);
         if ([service.UUID isEqual:[CBUUID UUIDWithString:@"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"]]) {
             [peripheral discoverCharacteristics:nil forService:service];
         }
@@ -249,15 +256,6 @@
     }
 }
 
-- (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray<CBATTRequest *> *)requests {
-    
-}
-
-- (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveReadRequest:(CBATTRequest *)request {
-    
-    [_peripheralManager respondToRequest:request withResult:CBATTErrorSuccess];
-}
-
 -(void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
     NSLog(@"didWriteValueForCharacteristic error = %@",error);
 }
@@ -271,7 +269,7 @@
 }
 
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
-    NSLog(@"disconnected!");
+    NSLog(@"d_isConnected!");
 
 }
 

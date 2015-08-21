@@ -404,7 +404,7 @@
                 [peripheralData setObject:@"SiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiri" forKey:CBAdvertisementDataLocalNameKey];
                 
                 CBMutableService *service = [[CBMutableService alloc] initWithType:[CBUUID UUIDWithString:@"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"] primary:YES];
-                CBMutableCharacteristic *c = [[CBMutableCharacteristic alloc] initWithType:[CBUUID UUIDWithString:@"68753A44-0000-1226-9C60-0050E4C00067"] properties:CBCharacteristicPropertyRead value:[@"siri" dataUsingEncoding:NSUTF8StringEncoding] permissions:CBAttributePermissionsReadable];
+                CBMutableCharacteristic *c = [[CBMutableCharacteristic alloc] initWithType:[CBUUID UUIDWithString:@"68753A44-0000-1226-9C60-0050E4C00067"] properties:CBCharacteristicPropertyRead|CBCharacteristicPropertyWrite value:nil permissions:CBAttributePermissionsReadable|CBAttributePermissionsWriteable];
                 service.characteristics = @[c];
                 
                 [_peripheralManager addService:service];
