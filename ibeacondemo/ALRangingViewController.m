@@ -229,7 +229,9 @@
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error {
     for (CBService *service in peripheral.services) {
 //        NSLog(@"service: %@",service);
-        [peripheral discoverCharacteristics:nil forService:service];
+        if ([service.UUID isEqual:[CBUUID UUIDWithString:@"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"]]) {
+            [peripheral discoverCharacteristics:nil forService:service];
+        }
     }
 }
 
@@ -237,12 +239,13 @@
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error {
     for (CBCharacteristic *characteristic in service.characteristics)
     {
-//        NSLog(@"Discovered characteristic %@", characteristic);
-        [peripheral readValueForCharacteristic:characteristic];
-        
-        NSData *data = [NSData dataWithBytes:[@"sisisisisisi" UTF8String] length:@"sisisisisisi".length];
-        
-        [peripheral writeValue:data forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
+        if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"68753A44-0000-1226-9C60-0050E4C00067"]]) {
+            [peripheral readValueForCharacteristic:characteristic];
+            
+            NSData *data = [NSData dataWithBytes:[@"sisisisisisi" UTF8String] length:@"sisisisisisi".length];
+            
+            [peripheral writeValue:data forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
+        }
     }
 }
 

@@ -145,11 +145,6 @@
 	return self;
 }
 
-- (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral
-{
-    
-}
-
 - (void)viewWillAppear:(BOOL)animated
 {
     // Refresh the enabled switch.
@@ -409,6 +404,9 @@
                 [peripheralData setObject:@"SiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiriSiri" forKey:CBAdvertisementDataLocalNameKey];
                 
                 CBMutableService *service = [[CBMutableService alloc] initWithType:[CBUUID UUIDWithString:@"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"] primary:YES];
+                CBMutableCharacteristic *c = [[CBMutableCharacteristic alloc] initWithType:[CBUUID UUIDWithString:@"68753A44-0000-1226-9C60-0050E4C00067"] properties:CBCharacteristicPropertyRead value:[@"siri" dataUsingEncoding:NSUTF8StringEncoding] permissions:CBAttributePermissionsReadable];
+                service.characteristics = @[c];
+                
                 [_peripheralManager addService:service];
                 [_peripheralManager startAdvertising:peripheralData];
             }
@@ -423,4 +421,37 @@
     }
 }
 
+- (void)peripheralManager:(CBPeripheralManager *)peripheral didAddService:(CBService *)service error:(NSError *)error {
+    if (!error) {
+        NSLog(@"%@",error);
+    } else {
+        NSLog(@"success");
+    }
+}
+
+- (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveReadRequest:(CBATTRequest *)request {
+
+}
+
+- (void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray<CBATTRequest *> *)requests {
+
+}
+
+- (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral
+{
+    
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
