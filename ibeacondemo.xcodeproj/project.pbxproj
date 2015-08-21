@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		533B93071B8480FD00D16708 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93061B8480FD00D16708 /* main.m */; };
+		533B93101B8480FD00D16708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533B930E1B8480FD00D16708 /* Main.storyboard */; };
+		533B93121B8480FD00D16708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533B93111B8480FD00D16708 /* Assets.xcassets */; };
+		533B93151B8480FD00D16708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533B93131B8480FD00D16708 /* LaunchScreen.storyboard */; };
+		533B93201B8480FD00D16708 /* ibeacondemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B931F1B8480FD00D16708 /* ibeacondemoTests.m */; };
+		533B932B1B8480FD00D16708 /* ibeacondemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B932A1B8480FD00D16708 /* ibeacondemoUITests.m */; };
+		533B93301B8480FD00D16708 /* ibeacondemo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 533B932F1B8480FD00D16708 /* ibeacondemo WatchKit App.app */; };
+		533B93361B8480FD00D16708 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533B93341B8480FD00D16708 /* Interface.storyboard */; };
+		533B93381B8480FD00D16708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533B93371B8480FD00D16708 /* Assets.xcassets */; };
+		533B933F1B8480FD00D16708 /* ibeacondemo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 533B933E1B8480FD00D16708 /* ibeacondemo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		533B934F1B8480FD00D16708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533B934E1B8480FD00D16708 /* Assets.xcassets */; };
+		533B93781B84811400D16708 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93651B84811400D16708 /* AppDelegate.m */; };
+		533B93791B84811400D16708 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93671B84811400D16708 /* ViewController.m */; };
+		533B937A1B84811400D16708 /* ALMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93691B84811400D16708 /* ALMenuViewController.m */; };
+		533B937B1B84811400D16708 /* ALMonitoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B936B1B84811400D16708 /* ALMonitoringViewController.m */; };
+		533B937C1B84811400D16708 /* ALRangingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B936D1B84811400D16708 /* ALRangingViewController.m */; };
+		533B937D1B84811400D16708 /* ALCalibrationBeginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B936F1B84811400D16708 /* ALCalibrationBeginViewController.m */; };
+		533B937E1B84811400D16708 /* ALCalibrationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93711B84811400D16708 /* ALCalibrationCalculator.m */; };
+		533B937F1B84811400D16708 /* ALCalibrationEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93731B84811400D16708 /* ALCalibrationEndViewController.m */; };
+		533B93801B84811400D16708 /* ALConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93751B84811400D16708 /* ALConfigurationViewController.m */; };
+		533B93811B84811400D16708 /* ALDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93771B84811400D16708 /* ALDefaults.m */; };
+		533B93881B84812000D16708 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93831B84812000D16708 /* InterfaceController.m */; };
+		533B93891B84812000D16708 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93851B84812000D16708 /* ExtensionDelegate.m */; };
+		533B938A1B84812000D16708 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533B93871B84812000D16708 /* NotificationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		533B931C1B8480FD00D16708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 533B92FA1B8480FD00D16708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 533B93011B8480FD00D16708;
+			remoteInfo = ibeacondemo;
+		};
+		533B93271B8480FD00D16708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 533B92FA1B8480FD00D16708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 533B93011B8480FD00D16708;
+			remoteInfo = ibeacondemo;
+		};
+		533B93311B8480FD00D16708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 533B92FA1B8480FD00D16708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 533B932E1B8480FD00D16708;
+			remoteInfo = "ibeacondemo WatchKit App";
+		};
+		533B93401B8480FD00D16708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 533B92FA1B8480FD00D16708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 533B933D1B8480FD00D16708;
+			remoteInfo = "ibeacondemo WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		533B93561B8480FD00D16708 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				533B933F1B8480FD00D16708 /* ibeacondemo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B935A1B8480FD00D16708 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				533B93301B8480FD00D16708 /* ibeacondemo WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		533B93021B8480FD00D16708 /* ibeacondemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ibeacondemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		533B93061B8480FD00D16708 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		533B930F1B8480FD00D16708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		533B93111B8480FD00D16708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		533B93141B8480FD00D16708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		533B93161B8480FD00D16708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533B931B1B8480FD00D16708 /* ibeacondemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ibeacondemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		533B931F1B8480FD00D16708 /* ibeacondemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ibeacondemoTests.m; sourceTree = "<group>"; };
+		533B93211B8480FD00D16708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533B93261B8480FD00D16708 /* ibeacondemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ibeacondemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		533B932A1B8480FD00D16708 /* ibeacondemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ibeacondemoUITests.m; sourceTree = "<group>"; };
+		533B932C1B8480FD00D16708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533B932F1B8480FD00D16708 /* ibeacondemo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ibeacondemo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		533B93351B8480FD00D16708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		533B93371B8480FD00D16708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		533B93391B8480FD00D16708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533B933E1B8480FD00D16708 /* ibeacondemo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ibeacondemo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		533B93441B8480FD00D16708 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		533B934E1B8480FD00D16708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		533B93501B8480FD00D16708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533B93641B84811400D16708 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		533B93651B84811400D16708 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		533B93661B84811400D16708 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		533B93671B84811400D16708 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		533B93681B84811400D16708 /* ALMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALMenuViewController.h; sourceTree = "<group>"; };
+		533B93691B84811400D16708 /* ALMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMenuViewController.m; sourceTree = "<group>"; };
+		533B936A1B84811400D16708 /* ALMonitoringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALMonitoringViewController.h; sourceTree = "<group>"; };
+		533B936B1B84811400D16708 /* ALMonitoringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALMonitoringViewController.m; sourceTree = "<group>"; };
+		533B936C1B84811400D16708 /* ALRangingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRangingViewController.h; sourceTree = "<group>"; };
+		533B936D1B84811400D16708 /* ALRangingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRangingViewController.m; sourceTree = "<group>"; };
+		533B936E1B84811400D16708 /* ALCalibrationBeginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCalibrationBeginViewController.h; sourceTree = "<group>"; };
+		533B936F1B84811400D16708 /* ALCalibrationBeginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCalibrationBeginViewController.m; sourceTree = "<group>"; };
+		533B93701B84811400D16708 /* ALCalibrationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCalibrationCalculator.h; sourceTree = "<group>"; };
+		533B93711B84811400D16708 /* ALCalibrationCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCalibrationCalculator.m; sourceTree = "<group>"; };
+		533B93721B84811400D16708 /* ALCalibrationEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCalibrationEndViewController.h; sourceTree = "<group>"; };
+		533B93731B84811400D16708 /* ALCalibrationEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCalibrationEndViewController.m; sourceTree = "<group>"; };
+		533B93741B84811400D16708 /* ALConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALConfigurationViewController.h; sourceTree = "<group>"; };
+		533B93751B84811400D16708 /* ALConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALConfigurationViewController.m; sourceTree = "<group>"; };
+		533B93761B84811400D16708 /* ALDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDefaults.h; sourceTree = "<group>"; };
+		533B93771B84811400D16708 /* ALDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDefaults.m; sourceTree = "<group>"; };
+		533B93821B84812000D16708 /* InterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		533B93831B84812000D16708 /* InterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		533B93841B84812000D16708 /* ExtensionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		533B93851B84812000D16708 /* ExtensionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		533B93861B84812000D16708 /* NotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		533B93871B84812000D16708 /* NotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		533B92FF1B8480FD00D16708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B93181B8480FD00D16708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B93231B8480FD00D16708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B933B1B8480FD00D16708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		533B92F91B8480FD00D16708 = {
+			isa = PBXGroup;
+			children = (
+				533B93041B8480FD00D16708 /* ibeacondemo */,
+				533B931E1B8480FD00D16708 /* ibeacondemoTests */,
+				533B93291B8480FD00D16708 /* ibeacondemoUITests */,
+				533B93331B8480FD00D16708 /* ibeacondemo WatchKit App */,
+				533B93421B8480FD00D16708 /* ibeacondemo WatchKit Extension */,
+				533B93031B8480FD00D16708 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		533B93031B8480FD00D16708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				533B93021B8480FD00D16708 /* ibeacondemo.app */,
+				533B931B1B8480FD00D16708 /* ibeacondemoTests.xctest */,
+				533B93261B8480FD00D16708 /* ibeacondemoUITests.xctest */,
+				533B932F1B8480FD00D16708 /* ibeacondemo WatchKit App.app */,
+				533B933E1B8480FD00D16708 /* ibeacondemo WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		533B93041B8480FD00D16708 /* ibeacondemo */ = {
+			isa = PBXGroup;
+			children = (
+				533B93641B84811400D16708 /* AppDelegate.h */,
+				533B93651B84811400D16708 /* AppDelegate.m */,
+				533B93661B84811400D16708 /* ViewController.h */,
+				533B93671B84811400D16708 /* ViewController.m */,
+				533B93681B84811400D16708 /* ALMenuViewController.h */,
+				533B93691B84811400D16708 /* ALMenuViewController.m */,
+				533B936A1B84811400D16708 /* ALMonitoringViewController.h */,
+				533B936B1B84811400D16708 /* ALMonitoringViewController.m */,
+				533B936C1B84811400D16708 /* ALRangingViewController.h */,
+				533B936D1B84811400D16708 /* ALRangingViewController.m */,
+				533B936E1B84811400D16708 /* ALCalibrationBeginViewController.h */,
+				533B936F1B84811400D16708 /* ALCalibrationBeginViewController.m */,
+				533B93701B84811400D16708 /* ALCalibrationCalculator.h */,
+				533B93711B84811400D16708 /* ALCalibrationCalculator.m */,
+				533B93721B84811400D16708 /* ALCalibrationEndViewController.h */,
+				533B93731B84811400D16708 /* ALCalibrationEndViewController.m */,
+				533B93741B84811400D16708 /* ALConfigurationViewController.h */,
+				533B93751B84811400D16708 /* ALConfigurationViewController.m */,
+				533B93761B84811400D16708 /* ALDefaults.h */,
+				533B93771B84811400D16708 /* ALDefaults.m */,
+				533B930E1B8480FD00D16708 /* Main.storyboard */,
+				533B93111B8480FD00D16708 /* Assets.xcassets */,
+				533B93131B8480FD00D16708 /* LaunchScreen.storyboard */,
+				533B93161B8480FD00D16708 /* Info.plist */,
+				533B93051B8480FD00D16708 /* Supporting Files */,
+			);
+			path = ibeacondemo;
+			sourceTree = "<group>";
+		};
+		533B93051B8480FD00D16708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				533B93061B8480FD00D16708 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		533B931E1B8480FD00D16708 /* ibeacondemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				533B931F1B8480FD00D16708 /* ibeacondemoTests.m */,
+				533B93211B8480FD00D16708 /* Info.plist */,
+			);
+			path = ibeacondemoTests;
+			sourceTree = "<group>";
+		};
+		533B93291B8480FD00D16708 /* ibeacondemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				533B932A1B8480FD00D16708 /* ibeacondemoUITests.m */,
+				533B932C1B8480FD00D16708 /* Info.plist */,
+			);
+			path = ibeacondemoUITests;
+			sourceTree = "<group>";
+		};
+		533B93331B8480FD00D16708 /* ibeacondemo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				533B93341B8480FD00D16708 /* Interface.storyboard */,
+				533B93371B8480FD00D16708 /* Assets.xcassets */,
+				533B93391B8480FD00D16708 /* Info.plist */,
+			);
+			path = "ibeacondemo WatchKit App";
+			sourceTree = "<group>";
+		};
+		533B93421B8480FD00D16708 /* ibeacondemo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				533B93821B84812000D16708 /* InterfaceController.h */,
+				533B93831B84812000D16708 /* InterfaceController.m */,
+				533B93841B84812000D16708 /* ExtensionDelegate.h */,
+				533B93851B84812000D16708 /* ExtensionDelegate.m */,
+				533B93861B84812000D16708 /* NotificationController.h */,
+				533B93871B84812000D16708 /* NotificationController.m */,
+				533B934E1B8480FD00D16708 /* Assets.xcassets */,
+				533B93501B8480FD00D16708 /* Info.plist */,
+				533B93431B8480FD00D16708 /* Supporting Files */,
+			);
+			path = "ibeacondemo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		533B93431B8480FD00D16708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				533B93441B8480FD00D16708 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		533B93011B8480FD00D16708 /* ibeacondemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533B935B1B8480FD00D16708 /* Build configuration list for PBXNativeTarget "ibeacondemo" */;
+			buildPhases = (
+				533B92FE1B8480FD00D16708 /* Sources */,
+				533B92FF1B8480FD00D16708 /* Frameworks */,
+				533B93001B8480FD00D16708 /* Resources */,
+				533B935A1B8480FD00D16708 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				533B93321B8480FD00D16708 /* PBXTargetDependency */,
+			);
+			name = ibeacondemo;
+			productName = ibeacondemo;
+			productReference = 533B93021B8480FD00D16708 /* ibeacondemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		533B931A1B8480FD00D16708 /* ibeacondemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533B935E1B8480FD00D16708 /* Build configuration list for PBXNativeTarget "ibeacondemoTests" */;
+			buildPhases = (
+				533B93171B8480FD00D16708 /* Sources */,
+				533B93181B8480FD00D16708 /* Frameworks */,
+				533B93191B8480FD00D16708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				533B931D1B8480FD00D16708 /* PBXTargetDependency */,
+			);
+			name = ibeacondemoTests;
+			productName = ibeacondemoTests;
+			productReference = 533B931B1B8480FD00D16708 /* ibeacondemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		533B93251B8480FD00D16708 /* ibeacondemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533B93611B8480FD00D16708 /* Build configuration list for PBXNativeTarget "ibeacondemoUITests" */;
+			buildPhases = (
+				533B93221B8480FD00D16708 /* Sources */,
+				533B93231B8480FD00D16708 /* Frameworks */,
+				533B93241B8480FD00D16708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				533B93281B8480FD00D16708 /* PBXTargetDependency */,
+			);
+			name = ibeacondemoUITests;
+			productName = ibeacondemoUITests;
+			productReference = 533B93261B8480FD00D16708 /* ibeacondemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		533B932E1B8480FD00D16708 /* ibeacondemo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533B93571B8480FD00D16708 /* Build configuration list for PBXNativeTarget "ibeacondemo WatchKit App" */;
+			buildPhases = (
+				533B932D1B8480FD00D16708 /* Resources */,
+				533B93561B8480FD00D16708 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				533B93411B8480FD00D16708 /* PBXTargetDependency */,
+			);
+			name = "ibeacondemo WatchKit App";
+			productName = "ibeacondemo WatchKit App";
+			productReference = 533B932F1B8480FD00D16708 /* ibeacondemo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		533B933D1B8480FD00D16708 /* ibeacondemo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533B93531B8480FD00D16708 /* Build configuration list for PBXNativeTarget "ibeacondemo WatchKit Extension" */;
+			buildPhases = (
+				533B933A1B8480FD00D16708 /* Sources */,
+				533B933B1B8480FD00D16708 /* Frameworks */,
+				533B933C1B8480FD00D16708 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ibeacondemo WatchKit Extension";
+			productName = "ibeacondemo WatchKit Extension";
+			productReference = 533B933E1B8480FD00D16708 /* ibeacondemo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		533B92FA1B8480FD00D16708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = tencent;
+				TargetAttributes = {
+					533B93011B8480FD00D16708 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					533B931A1B8480FD00D16708 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 533B93011B8480FD00D16708;
+					};
+					533B93251B8480FD00D16708 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 533B93011B8480FD00D16708;
+					};
+					533B932E1B8480FD00D16708 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					533B933D1B8480FD00D16708 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8P7343TG54;
+					};
+				};
+			};
+			buildConfigurationList = 533B92FD1B8480FD00D16708 /* Build configuration list for PBXProject "ibeacondemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 533B92F91B8480FD00D16708;
+			productRefGroup = 533B93031B8480FD00D16708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				533B93011B8480FD00D16708 /* ibeacondemo */,
+				533B931A1B8480FD00D16708 /* ibeacondemoTests */,
+				533B93251B8480FD00D16708 /* ibeacondemoUITests */,
+				533B932E1B8480FD00D16708 /* ibeacondemo WatchKit App */,
+				533B933D1B8480FD00D16708 /* ibeacondemo WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		533B93001B8480FD00D16708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533B93151B8480FD00D16708 /* LaunchScreen.storyboard in Resources */,
+				533B93121B8480FD00D16708 /* Assets.xcassets in Resources */,
+				533B93101B8480FD00D16708 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B93191B8480FD00D16708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B93241B8480FD00D16708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B932D1B8480FD00D16708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533B93381B8480FD00D16708 /* Assets.xcassets in Resources */,
+				533B93361B8480FD00D16708 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B933C1B8480FD00D16708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533B934F1B8480FD00D16708 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		533B92FE1B8480FD00D16708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533B937B1B84811400D16708 /* ALMonitoringViewController.m in Sources */,
+				533B93791B84811400D16708 /* ViewController.m in Sources */,
+				533B937C1B84811400D16708 /* ALRangingViewController.m in Sources */,
+				533B937E1B84811400D16708 /* ALCalibrationCalculator.m in Sources */,
+				533B93781B84811400D16708 /* AppDelegate.m in Sources */,
+				533B937D1B84811400D16708 /* ALCalibrationBeginViewController.m in Sources */,
+				533B93801B84811400D16708 /* ALConfigurationViewController.m in Sources */,
+				533B937A1B84811400D16708 /* ALMenuViewController.m in Sources */,
+				533B93071B8480FD00D16708 /* main.m in Sources */,
+				533B937F1B84811400D16708 /* ALCalibrationEndViewController.m in Sources */,
+				533B93811B84811400D16708 /* ALDefaults.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B93171B8480FD00D16708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533B93201B8480FD00D16708 /* ibeacondemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B93221B8480FD00D16708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533B932B1B8480FD00D16708 /* ibeacondemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533B933A1B8480FD00D16708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533B93891B84812000D16708 /* ExtensionDelegate.m in Sources */,
+				533B93881B84812000D16708 /* InterfaceController.m in Sources */,
+				533B938A1B84812000D16708 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		533B931D1B8480FD00D16708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 533B93011B8480FD00D16708 /* ibeacondemo */;
+			targetProxy = 533B931C1B8480FD00D16708 /* PBXContainerItemProxy */;
+		};
+		533B93281B8480FD00D16708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 533B93011B8480FD00D16708 /* ibeacondemo */;
+			targetProxy = 533B93271B8480FD00D16708 /* PBXContainerItemProxy */;
+		};
+		533B93321B8480FD00D16708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 533B932E1B8480FD00D16708 /* ibeacondemo WatchKit App */;
+			targetProxy = 533B93311B8480FD00D16708 /* PBXContainerItemProxy */;
+		};
+		533B93411B8480FD00D16708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 533B933D1B8480FD00D16708 /* ibeacondemo WatchKit Extension */;
+			targetProxy = 533B93401B8480FD00D16708 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		533B930E1B8480FD00D16708 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				533B930F1B8480FD00D16708 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		533B93131B8480FD00D16708 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				533B93141B8480FD00D16708 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		533B93341B8480FD00D16708 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				533B93351B8480FD00D16708 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		533B93511B8480FD00D16708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		533B93521B8480FD00D16708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		533B93541B8480FD00D16708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ibeacondemo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.wechat.ibeacondemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		533B93551B8480FD00D16708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ibeacondemo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.wechat.ibeacondemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		533B93581B8480FD00D16708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = ibeacondemo_WatchKit_Extension;
+				INFOPLIST_FILE = "ibeacondemo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.wechat.ibeacondemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		533B93591B8480FD00D16708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = ibeacondemo_WatchKit_Extension;
+				INFOPLIST_FILE = "ibeacondemo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.wechat.ibeacondemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		533B935C1B8480FD00D16708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ibeacondemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.wechat.ibeacondemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		533B935D1B8480FD00D16708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ibeacondemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.wechat.ibeacondemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		533B935F1B8480FD00D16708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ibeacondemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.wechat.ibeacondemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ibeacondemo.app/ibeacondemo";
+			};
+			name = Debug;
+		};
+		533B93601B8480FD00D16708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ibeacondemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.wechat.ibeacondemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ibeacondemo.app/ibeacondemo";
+			};
+			name = Release;
+		};
+		533B93621B8480FD00D16708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ibeacondemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.wechat.ibeacondemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ibeacondemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		533B93631B8480FD00D16708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ibeacondemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.wechat.ibeacondemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ibeacondemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		533B92FD1B8480FD00D16708 /* Build configuration list for PBXProject "ibeacondemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533B93511B8480FD00D16708 /* Debug */,
+				533B93521B8480FD00D16708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533B93531B8480FD00D16708 /* Build configuration list for PBXNativeTarget "ibeacondemo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533B93541B8480FD00D16708 /* Debug */,
+				533B93551B8480FD00D16708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533B93571B8480FD00D16708 /* Build configuration list for PBXNativeTarget "ibeacondemo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533B93581B8480FD00D16708 /* Debug */,
+				533B93591B8480FD00D16708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533B935B1B8480FD00D16708 /* Build configuration list for PBXNativeTarget "ibeacondemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533B935C1B8480FD00D16708 /* Debug */,
+				533B935D1B8480FD00D16708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533B935E1B8480FD00D16708 /* Build configuration list for PBXNativeTarget "ibeacondemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533B935F1B8480FD00D16708 /* Debug */,
+				533B93601B8480FD00D16708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533B93611B8480FD00D16708 /* Build configuration list for PBXNativeTarget "ibeacondemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533B93621B8480FD00D16708 /* Debug */,
+				533B93631B8480FD00D16708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 533B92FA1B8480FD00D16708 /* Project object */;
+}
