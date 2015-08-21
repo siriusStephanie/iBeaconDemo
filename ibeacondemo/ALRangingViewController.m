@@ -111,6 +111,8 @@
     CBPeripheral *_peripheral;
     
     BOOL _isConnected;
+    
+    NSMutableArray *_userArray;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -121,6 +123,7 @@
         _beacons = [[NSMutableDictionary alloc] init];
         _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
         _peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
+        _userArray = [[NSMutableArray alloc] init];
         
         if ([WCSession isSupported]) {
             _session = [WCSession defaultSession];
@@ -162,17 +165,19 @@
     //        [_peripheralManager startAdvertising:peripheralData];
     //    }
     
-    [self scan];
+//    [self scan];
 }
 
 - (void)session:(WCSession *)session didReceiveUserInfo:(NSDictionary<NSString *,id> *)userInfo {
-    NSLog(@"userInfo : %@",userInfo[@"name"]);
-    [self scan];
+//    NSLog(@"userInfo : %@",userInfo[@"name"]);
+    if ([userInfo[@"scan"] isEqualToString:@"start"]) {
+        [self scan];
+    }
 }
 
 - (void)session:(WCSession *)session didReceiveApplicationContext:(NSDictionary<NSString *,id> *)applicationContext {
     NSLog(@"applicationContext : %@",applicationContext[@"name"]);
-    [self scan];
+//    [self scan];
 }
 
 - (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral {
@@ -186,9 +191,9 @@
 - (void)scan {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        NSDictionary *scanOptions = @{CBCentralManagerScanOptionAllowDuplicatesKey:@(YES)};
-        if (_isConnected) {
-            return;
-        }
+//        if (_isConnected) {
+//            return;
+//        }
         
         NSArray *services = @[[CBUUID UUIDWithString:@"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"]];
         
@@ -196,6 +201,7 @@
 //        _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
         [_centralManager scanForPeripheralsWithServices:services options:nil];
 //        [_centralManager scanForPeripheralsWithServices:nil options:nil];
+        
         [self scan];
     });
 }
@@ -204,33 +210,51 @@
 //    if (advertisementData[@"kCBAdvDataLocalName"]) {
         NSLog(@"UUID = %@\nName = %@\nRSSI = %@",peripheral.identifier, peripheral.name, RSSI);
     
-    _peripheral = peripheral;
+//    _peripheral = peripheral;
     //尝试去连接对方
-    [_centralManager connectPeripheral:peripheral options:@{CBConnectPeripheralOptionNotifyOnConnectionKey : @(YES),
-                                                            CBConnectPeripheralOptionNotifyOnNotificationKey : @(YES)}];
+//    [_centralManager connectPeripheral:peripheral options:@{CBConnectPeripheralOptionNotifyOnConnectionKey : @(YES),
+//                                                            CBConnectPeripheralOptionNotifyOnNotificationKey : @(YES)}];
     
-//        NSDictionary *beaconDic = @{@"Name" : advertisementData[@"kCBAdvDataLocalName"]};
-//        [((AppDelegate *)[UIApplication sharedApplication].delegate).session sendMessage:beaconDic replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
-//            
-//        } errorHandler:^(NSError * _Nonnull error) {
-//            NSLog(@"%@",error);
-//        }];
-//    }
+    if (peripheral.name == nil) {
+        return;
+    }
+    
+    for (NSString *name in _userArray) {
+        if ([name isEqualToString:peripheral.name]) {
+            return;
+        }
+    }
+    
+    [_userArray addObject:peripheral.name];
+    NSDictionary *beaconDic = @{@"Name" : peripheral.name,
+                                @"RSSI" : RSSI,
+                               @"Count" : @(_userArray.count-1)};
+    
+    [_session transferUserInfo:beaconDic];
 }
 
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central {
     //    [_centralManager scanForPeripheralsWithServices:services options:@{CBCentralManagerScanOptionSolicitedServiceUUIDsKey : @[[CBUUID UUIDWithString:@"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0"]]}];
-    [self scan];
+//    [self scan];
 }
 
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
-    NSLog(@"connected!");
+//    NSLog(@"connected!");
+    
     _isConnected = YES;
     
     _peripheral.delegate = self;
     
-    //查找所有服务
+//    查找所有服务
     [_peripheral discoverServices:nil];
+}
+
+- (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
+//    NSLog(@"disConnected!");
+    
+    _isConnected = NO;
+    
+//    [self scan];
 }
 
 //发现了服务
@@ -249,28 +273,22 @@
         if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"68753A44-0000-1226-9C60-0050E4C00067"]]) {
             [peripheral readValueForCharacteristic:characteristic];
             
-            NSData *data = [NSData dataWithBytes:[@"sisisisisisi" UTF8String] length:@"sisisisisisi".length];
-            
+            NSData *data = [NSData dataWithBytes:[@"ch61470784 say hello" UTF8String] length:@"ch61470784 say hello".length];
             [peripheral writeValue:data forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
         }
     }
 }
 
 -(void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-    NSLog(@"didWriteValueForCharacteristic error = %@",error);
+//    NSLog(@"didWriteValueForCharacteristic error = %@",error);
 }
 
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-    NSLog(@"didUpdateValueForCharacteristic error = %@",error);
+//    NSLog(@"didUpdateValueForCharacteristic error = %@",error);
     
     NSData *data = characteristic.value;
     
-    NSLog(@"Data = %@", data);
-}
-
-- (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
-    NSLog(@"d_isConnected!");
-
+//    NSLog(@"Data = %@", data);
 }
 
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {

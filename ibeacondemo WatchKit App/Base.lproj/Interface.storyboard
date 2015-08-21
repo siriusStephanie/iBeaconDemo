@@ -10,17 +10,30 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label width="136" height="46" alignment="left" text="Distance:" id="nfa-1x-8WO"/>
-                        <label width="136" height="46" alignment="left" text="Name:" id="pOC-0X-Ihh"/>
-                        <button width="1" alignment="left" title="Button" id="S46-cF-gEj">
+                        <button width="1" alignment="left" title="开始扫描" id="X0M-Oh-JcW">
                             <connections>
-                                <action selector="sendAction" destination="AgC-eL-Hgc" id="PCL-2Y-OkQ"/>
+                                <action selector="startToScan" destination="AgC-eL-Hgc" id="AVY-XG-qaV"/>
                             </connections>
                         </button>
+                        <table alignment="left" id="1Wf-Kk-I3p">
+                            <items>
+                                <tableRow identifier="rowController" id="aGr-we-Boc" customClass="RowController">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="Wrj-0q-Sr9">
+                                        <items>
+                                            <label width="1" alignment="left" text="Name:" id="H4b-Va-tAu"/>
+                                            <label width="1" alignment="left" text="RSSI:" id="QkW-3m-vEj"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="nameLabel" destination="H4b-Va-tAu" id="jtB-ck-aBf"/>
+                                        <outlet property="rssiLabel" destination="QkW-3m-vEj" id="le4-w4-hbM"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
                     <connections>
-                        <outlet property="distanceLabel" destination="nfa-1x-8WO" id="rgo-y9-ivz"/>
-                        <outlet property="nameLabel" destination="pOC-0X-Ihh" id="Yfl-IW-kou"/>
+                        <outlet property="table" destination="1Wf-Kk-I3p" id="vTT-3f-Rct"/>
                     </connections>
                 </controller>
             </objects>
